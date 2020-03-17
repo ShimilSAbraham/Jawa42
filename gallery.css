@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    height:110px;
+    width:100%;
+}
+label.logo{
+    color: white;
+    font-size: 30px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 10px;
+}
+nav ul li a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    margin: 20px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 5px;
+    transition: 0.5;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+    
+}
+nav ul li:nth-child(2){
+    filter: hue-rotate(160deg);
+}
+nav ul li:nth-child(3){
+    filter: hue-rotate(290deg);
+}
+nav ul li:nth-child(4){
+    filter: hue-rotate(248deg);
+}
+.button a:hover{
+    background: #00ffff;
+    color:#000;
+    box-shadow: 0 0 5px #00ffff inset,
+    0 0 25px #00ffff inset,0 0 50px #00ffff,0 0 100px #00ffff;
+    transition: .5s;
+}
+.button a span{
+    position: absolute;
+    display: block;   
+}
+
+.button a span:nth-child(1){
+    top:0;
+    left:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(90deg,transparent,#00ffff);
+    animation: animate1 4s linear infinite;
+}
+@keyframes animate1{
+    0%{left: -100%;}
+    50%,100%{left: 100%;}
+}
+
+.button a span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:2px;
+    height:100%;
+    background: linear-gradient(180deg,transparent,#00ffff);
+    animation: animate2 4s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2{
+    0%{top: -100%;}
+    50%,100%{top: 100%;}
+}
+.button a span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background: linear-gradient(270deg,transparent,#00ffff);
+    animation: animate3 4s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes animate3{
+    0%{right: -100%;}
+    50%,100%{right: 100%;}
+}
+.button a span:nth-child(4){
+    left:0;
+    bottom:-100%;
+    width:2px;
+    height:100%;
+    background: linear-gradient(270deg,transparent,#00ffff);
+    animation: animate4 4s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes animate4{
+    0%{bottom: -100%;}
+    50%,100%{bottom: 100%;}
+}
+
+
+
+

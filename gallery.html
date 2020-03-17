@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Gallery || Jawa 42</title>
+    <link rel="stylesheet" href="gallery.css">
+      <link rel="stylesheet" href="swiper.min.css">
+      <link rel="stylesheet" href="social1.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body {
+          background: black;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+        }
+        .swiper-container {
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 400px;
+          height: 400px;
+    
+        }
+        .footer{
+                color: white;
+                font-size: 16px;
+                position: absolute;
+                left: 80%;
+                top: 95%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      </style>
+      
+</head>
+<body>
+    <header>
+        <nav>
+        <label class="logo"><img src="img/emblem.png" alt="Jawa Emblem" width=300px></label>
+            <ul class="button">
+                <li> <a href="index.html">About
+                  <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                    
+                </li>
+                <li> <a href="spec.html">Specifications
+                  <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a> 
+                  
+                </li>
+                <li><a href="gallery.html">Gallery
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+                  
+                </li>
+                <li>
+                    <a href="https://www.jawamotorcycles.com/motorcycles/jawa-forty-two/" target="_blank"> Official Site
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </a> 
+                    
+                  </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(img/first.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/side1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/side_noise.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/engine1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/engine2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/tank.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/paramb.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/front.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/back.jpg)"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="swiper.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 500,
+            modifier: 5,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
+<ul class="social">
+  <li>
+      <a href="https://www.facebook.com/jawamotorcycles/" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="fa fa-facebook" aria-hidden="true"></span>
+      </a>
+  </li>
+
+  <li>
+      <a href="https://twitter.com/jawamotorcycles" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="fa fa-twitter" aria-hidden="true"></span>
+      </a>
+  </li>
+
+  <li>
+      <a href="https://www.jawamotorcycles.com/" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="fa fa-google-plus" aria-hidden="true"></span>
+      </a>
+  </li>
+
+  <li>
+      <a href="https://www.instagram.com/jawamotorcycles/" target="_blank">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="fa fa-instagram" aria-hidden="true"></span>
+      </a>
+  </li>
+
+</ul>
+<span class="footer">My Website &copy; 2020</span>
+    </body>
+    </html>
